@@ -1,0 +1,70 @@
+﻿<Order_response_A2 xmlns="" xmlns:ew="http://www.reifen.net">
+  <DocumentID>A2</DocumentID>
+  <Variant1>5</Variant1>
+  <ErrorHead>
+    <ErrorCode>Referencia a objeto no establecida como instancia de un objeto.</ErrorCode>
+  </ErrorHead>
+  <CustomerReference>
+    <DocumentID>PCN50360</DocumentID>
+  </CustomerReference>
+  <BuyerParty>
+    <PartyID>12585</PartyID>
+    <AgencyCode>91</AgencyCode>
+  </BuyerParty>
+  <OrderLine>
+    <LineID>1</LineID>
+    <SuppliersOrderLineID>1</SuppliersOrderLineID>
+    <OrderedArticle>
+      <RequestedDeliveryDate>2019-10-25</RequestedDeliveryDate>
+      <ArticleComment />
+      <ArticleIdentification>
+        <ManufacturersArticleID />
+        <EANUCCArticleID>4968814938239</EANUCCArticleID>
+      </ArticleIdentification>
+      <ArticleDescription>
+        <ArticleDescriptionText>650R16 97/93Q LT GEOLANDAR M/T G003</ArticleDescriptionText>
+      </ArticleDescription>
+      <OrderReference>
+        <DocumentID />
+      </OrderReference>
+      <Error>
+        <ErrorCode>1</ErrorCode>
+        <ErrorText>Referencia a objeto no establecida como instancia de un objeto.</ErrorText>
+      </Error>
+      <ScheduleDetails>
+        <DeliveryDate>2019-10-25</DeliveryDate>
+        <AvailableQuantity>
+          <QuantityValue>1</QuantityValue>
+        </AvailableQuantity>
+      </ScheduleDetails>
+    </OrderedArticle>
+  </OrderLine>
+  <OrderLine>
+    <LineID>2</LineID>
+    <SuppliersOrderLineID>2</SuppliersOrderLineID>
+    <OrderedArticle>
+      <RequestedDeliveryDate>2019-10-25</RequestedDeliveryDate>
+      <ArticleComment />
+      <ArticleIdentification>
+        <ManufacturersArticleID />
+        <EANUCCArticleID>4968814938239</EANUCCArticleID>
+      </ArticleIdentification>
+      <ArticleDescription>
+        <ArticleDescriptionText>650R16 97/93Q LT GEOLANDAR M/T G003</ArticleDescriptionText>
+      </ArticleDescription>
+      <OrderReference>
+        <DocumentID />
+      </OrderReference>
+      <Error>
+        <ErrorCode>1</ErrorCode>
+        <ErrorText>Referencia a objeto no establecida como instancia de un objeto.</ErrorText>
+      </Error>
+      <ScheduleDetails>
+        <DeliveryDate>2019-10-25</DeliveryDate>
+        <AvailableQuantity>
+          <QuantityValue>1</QuantityValue>
+        </AvailableQuantity>
+      </ScheduleDetails>
+    </OrderedArticle>
+  </OrderLine>
+</Order_response_A2>

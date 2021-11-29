@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="EXO_WS_YK_RODINEX.YokoRODINEXService" CodeBehind="YokoRODINEXService.svc.vb" %>

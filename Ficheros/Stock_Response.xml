@@ -1,0 +1,38 @@
+﻿<Stock_response_A2 xmlns="" xmlns:ew="http://www.reifen.net">
+  <DocumentID>A2</DocumentID>
+  <Variant>5</Variant>
+  <ErrorHead>
+    <ErrorCode>0</ErrorCode>
+  </ErrorHead>
+  <CustomerReference>
+    <DocumentID>JASANCHO</DocumentID>
+  </CustomerReference>
+  <BuyerParty>
+    <PartyID />
+    <AgencyCode>91</AgencyCode>
+  </BuyerParty>
+  <Consignee>
+    <PartyID />
+    <AgencyCode>91</AgencyCode>
+  </Consignee>
+  <OrderLine>
+    <LineID>10</LineID>
+    <OrderedArticle>
+      <ArticleIdentification>
+        <ManufacturersArticleID>0210840345</ManufacturersArticleID>
+      </ArticleIdentification>
+      <RequestedQuantity>
+        <QuantityValue>4</QuantityValue>
+      </RequestedQuantity>
+      <Error>
+        <ErrorCode>0</ErrorCode>
+      </Error>
+      <ScheduleDetails>
+        <DeliveryDate>2019-9-2</DeliveryDate>
+        <AvailableQuantity>
+          <QuantityValue>0</QuantityValue>
+        </AvailableQuantity>
+      </ScheduleDetails>
+    </OrderedArticle>
+  </OrderLine>
+</Stock_response_A2>

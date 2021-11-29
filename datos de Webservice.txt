@@ -1,0 +1,5 @@
+
+YokoRODINEXService
+
+https://localhost:6969/YokoRODINEXService.svc
+https://crm.yokohamaiberia.es:30469/YokoRODINEXService.svc

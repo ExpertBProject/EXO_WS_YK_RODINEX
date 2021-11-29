@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <!--
+    For a description of web.config changes see http://go.microsoft.com/fwlink/?LinkId=235367.
+
+    The following attributes can be set on the <httpRuntime> tag.
+      <system.Web>
+        <httpRuntime targetFramework="4.5" />
+      </system.Web>
+  -->
+  <system.web>
+    <compilation debug="true" strict="false" explicit="true" targetFramework="4.5"/>
+    <customErrors mode="Off"/>
+    <pages controlRenderingCompatibilityVersion="4.0"/>
+  </system.web>
+  <system.net>
+    <defaultProxy>
+      <proxy usesystemdefault="false" bypassonlocal="true"/>
+    </defaultProxy>
+  </system.net>
+  <system.serviceModel>
+    <services>
+      <service name="EXO_WS_YK_RODINEX.YokoRODINEXService" behaviorConfiguration="ServiceBehaviour">
+        <endpoint address="" binding="basicHttpBinding" bindingConfiguration="BasicBinding" contract="EXO_WS_YK_RODINEX.IYokoRODINEXService"/>
+        <endpoint address="mex" binding="mexHttpsBinding" contract="IMetadataExchange"/>
+      </service>
+    </services>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicBinding">
+          <security mode="TransportWithMessageCredential">
+            <message clientCredentialType="UserName"/>
+          </security>
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="ServiceBehaviour">
+          <serviceMetadata httpsGetEnabled="true"/>
+          <serviceDebug includeExceptionDetailInFaults="true"/>
+          <serviceCredentials>
+            <userNameAuthentication userNamePasswordValidationMode="Custom" customUserNamePasswordValidatorType="EXO_WS_YK_RODINEX.Authenticator, EXO_WS_YK_RODINEX"/>
+          </serviceCredentials>
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+    <serviceHostingEnvironment multipleSiteBindingsEnabled="true"/>
+  </system.serviceModel>
+  <system.webServer>
+    <modules runAllManagedModulesForAllRequests="true"/>
+    <defaultDocument>
+      <files>
+        <add value="YokoRODINEXService.svc"/>
+      </files>
+    </defaultDocument>
+  </system.webServer>
+</configuration>
